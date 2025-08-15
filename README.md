@@ -1,4 +1,3 @@
-````markdown
 # Local Data Privatization Preprocessing (LDPP) Experiments
 
 This repository contains a collection of scripts and experiments for **Local Data Privatization Preprocessing (LDPP)** in the context of federated learning. The experiments include:
@@ -31,8 +30,6 @@ The `main.py` script provides an **interactive menu** to run all experiments eas
 ```bash
 git clone https://github.com/fedlearnbd/Local-Data-Privatization-Preprocessing.git
 cd Local-Data-Privatization-Preprocessing
-````
-
 2. (Optional) Create and activate a Python virtual environment:
 
 ```bash
@@ -136,3 +133,4 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 Do you want me to add that?
 ```
+
