@@ -129,8 +129,6 @@ You can store them via **Git LFS** or an external link (e.g., OneDrive, Google D
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ```
-
-
-Do you want me to add that?
 ```
+
 
