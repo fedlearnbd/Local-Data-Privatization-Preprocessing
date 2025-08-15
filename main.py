@@ -27,47 +27,47 @@ options = {
           "cmd": "python experiments/run_for_mia_ldpp_krum.py --dataset pathmnist --rounds 10 --samples 1000 --transform normal --noise gaussian --epsilon 3.0"},
 
     "10": {"name": "Label Flipping Attack For Federated Averaging - (LFA-FedAvg)", 
-          "cmd": "python experiments/run_for_lfa_fedavg.py --dataset pathmnist --rounds 10 --attacker_ratio 0.3"},
+           "cmd": "python experiments/run_for_lfa_fedavg.py --dataset pathmnist --rounds 10 --attacker_ratio 0.3"},
     
-     "11": {"name": "Label Flipping Attack For Ldpp-Avg - (LFA-Ldpp-Avg)", 
-          "cmd": "python experiments/run_for_lfa_ldpp_avg.py --dataset pathmnist --rounds 10  --transform normal --noise gaussian --epsilon 3.0 --attacker_ratio 0.3"},
+    "11": {"name": "Label Flipping Attack For Ldpp-Avg - (LFA-Ldpp-Avg)", 
+           "cmd": "python experiments/run_for_lfa_ldpp_avg.py --dataset pathmnist --rounds 10  --transform normal --noise gaussian --epsilon 3.0 --attacker_ratio 0.3"},
     
     "12": {"name": "Label Flipping Attack For Ldpp-Krum - (LFA-Ldpp-Avg)", 
-          "cmd": "python experiments/run_for_lfa_ldpp_krum.py --dataset pathmnist --rounds 10 --transform normal --noise gaussian --epsilon 3.0 --attacker_ratio 0.3"},
+           "cmd": "python experiments/run_for_lfa_ldpp_krum.py --dataset pathmnist --rounds 10 --transform normal --noise gaussian --epsilon 3.0 --attacker_ratio 0.3"},
 
 }
 
-def afficher_menu():
-    print("\n=== MENU D'EXPÉRIMENTATION ===")
+def show_menu():
+    print("\n=== EXPERIMENTATION MENU ===")
     for key, value in options.items():
         print(f"{key}. {value['name']}")
-    print("0. Quitter")
+    print("0. Exit")
 
 def main():
     while True:
-        afficher_menu()
-        choix = input("\nSélectionnez une option: ").strip()
+        show_menu()
+        choice = input("\nSelect an option: ").strip()
         
-        if choix == "0":
-            print("Au revoir !")
+        if choice == "0":
+            print("Goodbye!")
             break
-        elif choix in options:
-            cmd = options[choix]["cmd"]
-            print("\n=== Ligne de commande actuelle ===")
+        elif choice in options:
+            cmd = options[choice]["cmd"]
+            print("\n=== Current Command ===")
             
-            # Ligne pré-remplie éditable
-            nouvelle_cmd = prompt(
-                "\nModifiez la commande si nécessaire puis appuyez sur Entrée:\n> ",
+            # Editable pre-filled command line
+            new_cmd = prompt(
+                "\nEdit the command if necessary and press Enter:\n> ",
                 default=cmd
             ).strip()
             
-            if nouvelle_cmd:
-                cmd = nouvelle_cmd
+            if new_cmd:
+                cmd = new_cmd
             
-            print(f"\n=== Exécution: {cmd} ===\n")
+            print(f"\n=== Executing: {cmd} ===\n")
             os.system(cmd)
         else:
-            print("Option invalide, veuillez réessayer.")
+            print("Invalid option, please try again.")
 
 if __name__ == "__main__":
     main()
