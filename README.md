@@ -1,6 +1,6 @@
 # Local Data Privatization Preprocessing (LDPP) Experiments
 
-This repository contains a collection of scripts and experiments for **Local Data Privatization Preprocessing (LDPP)** in the context of federated learning. The experiments include:
+This repository contains a collection of scripts and experiments for **Local Data Privatization Preprocessing (LDPP)** in the context of basic federated learning implementation. The experiments include:
 
 - Distance analysis between original and privatized datasets.
 - Federated Learning algorithms (FedAvg, FedKrum).
@@ -127,6 +127,7 @@ You can store them via **Git LFS** or an external link (e.g., OneDrive, Google D
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 
 
