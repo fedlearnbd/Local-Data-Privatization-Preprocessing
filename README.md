@@ -52,8 +52,8 @@ pip install -r requirements.txt
 
 1. **Prepare datasets**:
 
-   * Place your MedNIST datasets (`pathmnist.npz`, `bloodmnist.npz`, `organamnist.npz`) in the `data/` folder.
-   * Download datasets in external storage link (OneDrive). See data/Readme.md
+   * Place your MedMNIST datasets (`pathmnist.npz`, `bloodmnist.npz`, `organamnist.npz`) in the `data/` folder.
+   * Download datasets directly or in external storage link (Google Drive). See data/Readme.md
 
 2. **Launch the interactive menu**:
 
@@ -127,6 +127,7 @@ You can store them via **Git LFS** or an external link (e.g., OneDrive, Google D
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
 
 
 
