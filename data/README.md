@@ -1,6 +1,3 @@
-
-
-````markdown
 ## 📂 Dataset
 
 This project uses subsets of the **MedMNIST** dataset collection.  
@@ -11,7 +8,6 @@ You can run the provided script to automatically fetch the datasets into the `da
 
 ```bash
 python download_data.py
-````
 
 This will download the following files:
 
