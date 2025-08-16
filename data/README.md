@@ -1,21 +1,3 @@
-# Federated Learning with MedMNIST
-
-This project implements federated learning experiments using MedMNIST datasets (BloodMNIST, OrganAMNIST, PathMNIST). It supports both **FedAvg** and **privacy-preserving training** methods.
-
----
-
-## 🚀 Setup
-
-Clone the repository and install dependencies:
-
-```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
-pip install -r requirements.txt
-```
-
----
-
 ## 📂 Dataset
 
 This project uses subsets of the **MedMNIST** dataset collection.
@@ -51,33 +33,6 @@ project/
 │   ├── bloodmnist.npz
 │   ├── organamnist.npz
 │   └── pathmnist.npz
-```
-
----
-
-## ⚡ Run Experiments
-
-You can launch experiments via the interactive `main.py` menu:
-
-```bash
-python main.py
-```
-
-Example commands inside the menu include training with **FedAvg**, **LDPP**, or running **membership inference attacks**.
-
----
-
-## 📂 Project Structure
-
-```
-├── core/                  # Core federated learning logic
-├── utils/                 # Utilities (data loading, preprocessing, etc.)
-├── data/                  # Datasets (downloaded here automatically)
-├── experiments/           # Experiment scripts
-├── main.py                # Main interactive menu
-├── download_data.py       # Automatic dataset downloader
-├── requirements.txt       # Python dependencies
-└── README.md              # Project documentation
 ```
 
 ---
